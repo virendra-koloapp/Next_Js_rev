@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./main-header.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -12,9 +13,17 @@ export default function Header() {
         />
       </div>
       <div className={styles.actions}>
-        <div className={styles.active}>Community</div>
-        <div>Meals</div>
-        <div>Login</div>
+        <div className={styles.active}>
+          <Link href={"/community"}>Community</Link>
+        </div>
+
+        <div>
+          <Link href={"/meals"}>Meals</Link>
+        </div>
+
+        <div>
+          <Link href={"/login"}>Login</Link>
+        </div>
       </div>
     </div>
   );

@@ -19,13 +19,17 @@
   flex-direction: row;
   align-items: center;
 
-  div {
+  a {
+    text-decoration: none;
+  }
+
+  div a {
     padding: 10px;
     color: rgb(82, 82, 82);
     cursor: pointer;
   }
 
-  div.active {
+  div.active a {
     color: tomato;
   }
 }

@@ -1,7 +1,7 @@
 import MealList from "@/components/meal-list/meal-list";
 import React from "react";
 
-import meals from "@/data/meals.json";
+import { fetchMeals } from "@/lib/meals";
 
 export const metadata = {
   title: "Meals Listing page",
@@ -9,9 +9,10 @@ export const metadata = {
 };
 
 export default async function MealsPage() {
+  const meals = await fetchMeals();
   return (
     <div>
-      <MealList meals={meals.burgers} />
+      <MealList meals={meals} />
     </div>
   );
 }
