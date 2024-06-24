@@ -20,11 +20,6 @@ export default function MemesPage() {
     <div>
       <div className={styles.content}>
         <h1>Welcome to Our Memes Library</h1>
-        <p>
-          Explore our delicious range of burgers, made with the freshest
-          ingredients and cooked to perfection. Whether you're a meat lover or a
-          veggie enthusiast, we've got something to satisfy your cravings.
-        </p>
       </div>
 
       <Suspense fallback={<LoadingMemes />}>
