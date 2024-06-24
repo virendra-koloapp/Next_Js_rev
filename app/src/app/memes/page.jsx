@@ -1,25 +1,25 @@
-import MealList from "@/components/meal-list/meal-list";
+import MemeList from "@/components/meme-list/meme-list";
 import React, { Suspense } from "react";
 
-import { fetchMeals } from "@/lib/meals";
+import { getMemes } from "@/lib/memes";
 import styles from "./page.module.scss";
-import LoadingMeals from "./loading-out";
+import LoadingMemes from "./loading-out";
 
 export const metadata = {
-  title: "Meals Listing page",
+  title: "Meme Listing page",
   description: "Some description for the page",
 };
 
-async function Meals() {
-  const meals = await fetchMeals();
-  return <MealList meals={meals} />;
+async function Memes() {
+  const memes = await getMemes();
+  return <MemeList memes={memes} />;
 }
 
-export default function MealsPage() {
+export default function MemesPage() {
   return (
     <div>
       <div className={styles.content}>
-        <h1>Welcome to Our Burger Menu</h1>
+        <h1>Welcome to Our Memes Library</h1>
         <p>
           Explore our delicious range of burgers, made with the freshest
           ingredients and cooked to perfection. Whether you're a meat lover or a
@@ -27,8 +27,8 @@ export default function MealsPage() {
         </p>
       </div>
 
-      <Suspense fallback={<LoadingMeals />}>
-        <Meals />
+      <Suspense fallback={<LoadingMemes />}>
+        <Memes />
       </Suspense>
     </div>
   );

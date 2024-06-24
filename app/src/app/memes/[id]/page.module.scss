@@ -4,13 +4,10 @@
     width: 50%;
     height: auto;
     aspect-ratio: 1/1;
-    object-fit: cover;
+    object-fit: contain;
     text-align: center;
   }
   text-align: center;
-}
-
-.price {
 }
 
 .title {

@@ -8,7 +8,7 @@ export default function NotFound() {
         src="https://indianmemetemplates.com/wp-content/uploads/puneet-superstar-eating-street-food.jpg"
         alt=""
       />
-      <h1>Meal Not Found</h1>
+      <h1>Meme Not Found</h1>
     </div>
   );
 }

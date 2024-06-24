@@ -18,11 +18,11 @@ export default function Header() {
         </div>
 
         <div>
-          <Link href={"/meals"}>Meals</Link>
+          <Link href={"/memes"}>Memes</Link>
         </div>
 
         <div>
-          <Link href={"/login"}>Login</Link>
+          <Link href={"/share"}>Share Meme</Link>
         </div>
       </div>
     </div>

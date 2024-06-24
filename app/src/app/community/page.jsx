@@ -1,8 +1,8 @@
-import MealList from "@/components/meal-list/meal-list";
+import MemeList from "@/components/meme-list/meme-list";
 import React from "react";
 
 export const metadata = {
-  title: "Meals Community",
+  title: "Meme Community",
 };
 
 export default async function CommunityPage() {
